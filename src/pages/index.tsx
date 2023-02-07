@@ -19,28 +19,14 @@ export default function HomePage() {
       <Seo />
 
       <main>
-        <Header />
         <div
           style={{
-            backgroundImage: `url(/landing_2.jpg)`,
+            backgroundImage: `url(/images/landing_art.png)`,
             backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center',
           }}
-          className='min-h-screen bg-[#0c0d0d] opacity-100'
+          className='min-h-screen w-full bg-[#0c0d0d] bg-cover bg-center opacity-100'
         >
-          {/* <div
-            style={{
-              backgroundImage: `url(/svg/nano_overlay.svg)`,
-              backgroundRepeat: 'no-repeat',
-            }}
-            className='z-25 flex h-screen min-h-screen w-full flex-col bg-[#0c0d0d] p-5 opacity-40'
-          >
-            <div className='bg-slate-30 mt-auto mb-24 w-full p-10 text-center text-slate-400'>
-              <Button className='rounded-none border border-[#ff494e] bg-transparent py-2 px-4 font-semibold text-white hover:border-transparent hover:bg-[#ff494e]'>
-                ENTER THE 0N1VERSE
-              </Button>
-            </div>
-          </div> */}
+          <Header />
         </div>
       </main>
     </Layout>

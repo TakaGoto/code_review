@@ -3,7 +3,7 @@ import * as React from 'react';
 
 export default function Header() {
   return (
-    <header className='top-0 z-30 bg-black px-2 py-4 sm:px-4'>
+    <header className='top-0 z-30 bg-black bg-opacity-0 px-2 py-4 sm:px-4'>
       <div className='mx-auto flex max-w-7xl items-center justify-between'>
         <a href='#'>
           <Image src='svg/0n1_logo.svg' alt='0n1 logo' height='45' width='45' />
@@ -69,9 +69,9 @@ export default function Header() {
                 stroke='currentColor'
               >
                 <path
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  stroke-width='2'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='2'
                   d='M4 8h16M4 16h16'
                 />
               </svg>

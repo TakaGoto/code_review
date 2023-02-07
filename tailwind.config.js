@@ -8,7 +8,8 @@ module.exports = {
     extend: {
       fontFamily: {
         primary: ['Inter', ...fontFamily.sans],
-        orbitron: ['Orbitron', ...fontFamily.sans]
+        orbitron: ['Orbitron', ...fontFamily.sans],
+        inconsolata: ['Inconsolata', ...fontFamily.sans]
       },
       colors: {
         primary: {
@@ -25,6 +26,8 @@ module.exports = {
           900: 'rgb(var(--tw-color-primary-900) / <alpha-value>)',
         },
         dark: '#222222',
+        aka: '#EF4C52',
+        kiiro: '#f1f107'
       },
       keyframes: {
         flicker: {
