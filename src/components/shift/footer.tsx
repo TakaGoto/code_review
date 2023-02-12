@@ -47,7 +47,7 @@ export default function ShiftFooter() {
           viewBox='0 0 569 6'
           fill='none'
           xmlns='http://www.w3.org/2000/svg'
-          className='float-left'
+          className='invisible float-left sm:invisible md:invisible lg:visible xl:visible 2xl:visible'
         >
           <path
             d='M555.695 5.5L0.490417 5.5L13.2952 0.5L568.51 0.5L555.695 5.5Z'
@@ -60,7 +60,7 @@ export default function ShiftFooter() {
           viewBox='0 0 48 6'
           fill='none'
           xmlns='http://www.w3.org/2000/svg'
-          className='float-left'
+          className='invisible float-left sm:invisible md:invisible lg:visible xl:visible 2xl:visible'
         >
           <path
             d='M34.2588 5.5L0.846432 5.5L13.6143 0.5L47.0269 0.5L34.2588 5.5Z'
@@ -73,7 +73,7 @@ export default function ShiftFooter() {
           viewBox='0 0 46 6'
           fill='none'
           xmlns='http://www.w3.org/2000/svg'
-          className='float-left'
+          className='invisible float-left sm:invisible md:invisible lg:invisible xl:visible 2xl:visible'
         >
           <path
             d='M32.5745 5.5L0.202602 5.5L12.8566 0.5L45.2285 0.5L32.5745 5.5Z'
@@ -86,7 +86,7 @@ export default function ShiftFooter() {
           viewBox='0 0 230 6'
           fill='none'
           xmlns='http://www.w3.org/2000/svg'
-          className='float-left'
+          className='invisible float-left sm:invisible md:invisible lg:invisible xl:visible 2xl:visible'
         >
           <path
             d='M215 5.5L0.261032 5.5L13.0814 0.5L230 0.5L215 5.5Z'
@@ -94,7 +94,7 @@ export default function ShiftFooter() {
           />
         </svg>
         <div className='fixed bottom-5 right-5 font-inconsolata text-sm text-aka'>
-          SYSTEM PRESSURED. LOCKED
+          SYSTEM REC0VERY. 0N1
         </div>
       </div>
     </div>

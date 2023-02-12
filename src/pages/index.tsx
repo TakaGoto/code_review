@@ -1,8 +1,12 @@
 import * as React from 'react';
 
+import styles from './index.module.css';
+
 import Header from '@/components/layout/Header';
 import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
+
+import Shift from '@/pages/shift';
 
 /**
  * SVGR Support
@@ -13,21 +17,28 @@ import Seo from '@/components/Seo';
  */
 
 export default function HomePage() {
+  const [isAnimationDone, setIsAnimationDone] = React.useState(false);
+
   return (
     <Layout>
       {/* <Seo templateTitle='Home' /> */}
       <Seo />
 
       <main>
-        <div
-          style={{
-            backgroundImage: `url(/images/landing_art.png)`,
-            backgroundRepeat: 'no-repeat',
-          }}
-          className='min-h-screen w-full bg-[#0c0d0d] bg-cover bg-center opacity-100'
-        >
-          <Header />
-        </div>
+        {isAnimationDone ? (
+          <Shift />
+        ) : (
+          <div
+            style={{
+              backgroundImage: `url(/images/landing_art.png)`,
+              backgroundRepeat: 'no-repeat',
+            }}
+            className={`${styles.glitch} min-h-screen w-full bg-[#0c0d0d] bg-cover bg-center opacity-100`}
+            onAnimationEnd={() => setIsAnimationDone(true)}
+          >
+            <Header />
+          </div>
+        )}
       </main>
     </Layout>
   );

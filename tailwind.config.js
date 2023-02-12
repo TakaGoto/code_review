@@ -9,7 +9,7 @@ module.exports = {
       fontFamily: {
         primary: ['Inter', ...fontFamily.sans],
         orbitron: ['Orbitron', ...fontFamily.sans],
-        inconsolata: ['Inconsolata', ...fontFamily.sans]
+        inconsolata: ['Inconsolata', ...fontFamily.sans],
       },
       colors: {
         primary: {
@@ -27,7 +27,8 @@ module.exports = {
         },
         dark: '#222222',
         aka: '#EF4C52',
-        kiiro: '#f1f107'
+        kiiro: '#f1f107',
+        ao: '#03BDB8',
       },
       keyframes: {
         flicker: {
