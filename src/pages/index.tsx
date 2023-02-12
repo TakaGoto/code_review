@@ -21,10 +21,9 @@ export default function HomePage() {
 
   return (
     <Layout>
-      {/* <Seo templateTitle='Home' /> */}
       <Seo />
 
-      <main>
+      <main className='w-full bg-black'>
         {isAnimationDone ? (
           <Shift />
         ) : (

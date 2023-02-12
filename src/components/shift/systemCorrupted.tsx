@@ -16,7 +16,6 @@ export default function SystemCorrupted(props: SystemsProps) {
               state.elements.cursor.style.display = 'none';
             })
             .changeDelay(1)
-            .pauseFor(4000)
             .typeString(
               '<div class="pt-8 font-orbitron text-[32px] font-semibold text-aka">SYST3M CORRUPTED</div>'
             )
@@ -34,21 +33,6 @@ export default function SystemCorrupted(props: SystemsProps) {
             )
             .typeString(
               '<div class="font-inconsolata">[MainFrame] executing /bin/sh /breach_protocol.sh</div>'
-            )
-            .typeString(
-              '<div class="font-inconsolata">[DATABASE] ENCLAVE_PROD corrupted. attempting repair: FAILED</div>'
-            )
-            .typeString(
-              '<div class="font-inconsolata">[DATABASE] ENCLAVE_PROD corrupted. retrieving back: FAILED</div>'
-            )
-            .typeString(
-              '<div class="font-inconsolata">[DATABASE] ENCLAVE_PROD corrupted. retrieving shard: FAILED</div>'
-            )
-            .typeString(
-              '<div class="font-inconsolata">[ENCLAVE] process corrupted. attempting restart: FAILED</div>'
-            )
-            .typeString(
-              '<div class="font-inconsolata"> BREACH PROTOCOL FAILED. RETRYING....... </div>'
             )
             .typeString(
               '<div class="font-inconsolata">[DATABASE] ENCLAVE_PROD corrupted. attempting repair: FAILED</div>'

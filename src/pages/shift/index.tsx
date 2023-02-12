@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 
@@ -7,6 +8,7 @@ import SystemCorrupted from '@/components/shift/systemCorrupted';
 
 export default function Shift() {
   const [isTypingDone, setIsTypingDown] = React.useState(false);
+  const [isSystemsTypingDone, setSystemsTypingDone] = React.useState(false);
 
   return (
     <div className='min-h-screen bg-black'>
@@ -15,6 +17,13 @@ export default function Shift() {
         <div className='grid grid-cols-1'>
           <div className='bg-black'>
             <p className='pb-4 font-orbitron text-sm text-aka'>
+              <Image
+                src='/images/0n1_logo_red.png'
+                width='24'
+                height='24'
+                alt=''
+                className='float-left pr-1'
+              />
               ON1VERSE // Systems.
             </p>
             <div className='grid grid-cols-1'>
@@ -61,6 +70,9 @@ export default function Shift() {
                           .typeString(
                             '[MainFrame][ERR0R] ACTIVATING DEFENSE PROTOCOL'
                           )
+                          .callFunction(() => {
+                            setSystemsTypingDone(true);
+                          })
                           .start();
                       }}
                     />
@@ -69,7 +81,11 @@ export default function Shift() {
               </div>
             </div>
             <div className=''>
-              <SystemCorrupted setIsTypingDone={setIsTypingDown} />
+              {isSystemsTypingDone ? (
+                <SystemCorrupted setIsTypingDone={setIsTypingDown} />
+              ) : (
+                <div></div>
+              )}
               {/* <DefenseProtocol /> */}
             </div>
           </div>
