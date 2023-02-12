@@ -1,5 +1,7 @@
 import Typewriter from 'typewriter-effect';
 
+import styles from './systemCorrupted.module.css';
+
 interface SystemsProps {
   // eslint-disable-next-line @typescript-eslint/ban-types
   setIsTypingDone: Function;
@@ -17,7 +19,7 @@ export default function SystemCorrupted(props: SystemsProps) {
             })
             .changeDelay(1)
             .typeString(
-              '<div class="pt-8 font-orbitron text-[32px] font-semibold text-aka">SYST3M CORRUPTED</div>'
+              `<div class="pt-8 font-orbitron text-[32px] ${styles.text_glitch} font-semibold text-aka">SYST3M CORRUPTED</div>`
             )
             .typeString(
               '<p class="pt-6 font-inconsolata text-aka"> Content access has now been restricted by an unknown operator.</p>'

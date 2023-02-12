@@ -36,6 +36,11 @@ export default function HomePage() {
             onAnimationEnd={() => setIsAnimationDone(true)}
           >
             <Header />
+            <div className='grid min-h-screen w-full place-items-center'>
+              <div className='text-center font-orbitron text-9xl font-bold text-white'>
+                0N1Force
+              </div>
+            </div>
           </div>
         )}
       </main>

@@ -1,10 +1,11 @@
 import Image from 'next/image';
 
+import styles from './backup.module.css';
+
 import Seo from '@/components/Seo';
 
 export default function Backup() {
   return (
-    // <div className='absolute top-[92px] right-[168px]'>
     <div>
       <Seo />
       <div className='absolute animate-in slide-in-from-top lg:top-[92px] lg:right-[168px] xl:top-[92px] xl:right-[168px] 2xl:top-[92px] 2xl:right-[168px]'>
@@ -76,7 +77,9 @@ export default function Backup() {
               <div className='font-inconsolata text-xs text-aka'>
                 [BREACH_PROTOCOL] SETUP COMPLETE
               </div>
-              <div className='pt-4 font-orbitron text-[25px] text-ao'>
+              <div
+                className={`pt-4 font-orbitron text-[25px] text-ao ${styles.text_glitch}`}
+              >
                 EMERGENCY BACKUP ACTIVATED
               </div>
               <div className='font-inconsolata text-ao'>
