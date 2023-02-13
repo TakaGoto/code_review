@@ -33,7 +33,7 @@ export default function Shift() {
                     <Typewriter
                       onInit={(typewriter) => {
                         typewriter
-                          .changeDelay(1)
+                          .changeDelay(10)
                           .callFunction((state) => {
                             state.elements.cursor.style.display = 'none';
                           })
