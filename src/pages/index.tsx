@@ -41,7 +41,7 @@ export default function HomePage() {
                 backgroundRepeat: 'no-repeat',
               }}
               ref={glitch.ref}
-              className='blah min-h-screen w-full bg-[#0c0d0d] bg-cover bg-center opacity-100'
+              className='min-h-screen w-fit bg-[#0c0d0d] bg-cover bg-center opacity-100 md:w-full lg:w-full xl:w-full 2xl:w-full'
               onAnimationEnd={() => setIsAnimationDone(true)}
             >
               <Header />

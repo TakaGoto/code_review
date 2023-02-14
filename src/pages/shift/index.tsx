@@ -2,6 +2,8 @@ import Image from 'next/image';
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 
+import styles from './index.module.css';
+
 import Backup from '@/components/shift/backup';
 import ShiftFooter from '@/components/shift/footer';
 import SystemCorrupted from '@/components/shift/systemCorrupted';
@@ -11,12 +13,14 @@ export default function Shift() {
   const [isSystemsTypingDone, setSystemsTypingDone] = React.useState(false);
 
   return (
-    <div className='min-h-screen bg-black'>
+    <div className='min-h-screen w-fit bg-black md:w-full lg:w-full xl:w-full 2xl:w-full'>
       {isTypingDone ? <Backup /> : <div></div>}
-      <div className='container mx-auto pt-7'>
+      <div className='container mx-auto pt-7 pl-3'>
         <div className='grid grid-cols-1'>
           <div className='bg-black'>
-            <p className='pb-4 font-orbitron text-sm text-aka'>
+            <p
+              className={`pb-4 font-orbitron text-sm text-aka ${styles.text_glitch}`}
+            >
               <Image
                 src='/images/0n1_logo_red.png'
                 width='24'

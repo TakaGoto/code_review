@@ -1,6 +1,6 @@
 export default function ShiftFooter() {
   return (
-    <div>
+    <div className='hidden sm:visible md:visible lg:visible xl:visible 2xl:visible'>
       <div style={{ position: 'absolute' }} className='bottom-5'>
         <svg
           width='215'

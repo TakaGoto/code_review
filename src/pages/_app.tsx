@@ -1,15 +1,28 @@
 import { AppProps } from 'next/app';
+import { useEffect } from 'react';
 
 import '@/styles/globals.css';
-// !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
-import '@/styles/colors.css';
-
-/**
- * !STARTERCONF info
- * ? `Layout` component is called in every page using `np` snippets. If you have consistent layout across all page, you can add it here too
- */
-
 function MyApp({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      // Handler to call on window resize
+      // eslint-disable-next-line no-inner-declarations
+      const handleResize = () => {
+        const vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+      };
+
+      // Add event listener
+      window.addEventListener('resize', handleResize);
+
+      // Call handler right away so state gets updated with initial window size
+      handleResize();
+
+      // Remove event listener on cleanup
+      return () => window.removeEventListener('resize', handleResize);
+    }
+  });
+
   return <Component {...pageProps} />;
 }
 

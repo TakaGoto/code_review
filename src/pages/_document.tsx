@@ -17,8 +17,9 @@ export default function Document() {
           type='font/woff2'
           crossOrigin='anonymous'
         />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       </Head>
-      <body>
+      <body className='bg-black'>
         <Main />
         <NextScript />
       </body>

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from 'next/image';
 
 import styles from './backup.module.css';
@@ -6,18 +7,48 @@ import Seo from '@/components/Seo';
 
 export default function Backup() {
   return (
-    <div>
+    <div className='fixed inset-0 h-full w-full overflow-y-auto bg-black bg-opacity-50 sm:bg-opacity-50 md:bg-opacity-50 lg:bg-opacity-0 xl:bg-opacity-0 2xl:bg-opacity-0'>
       <Seo />
-      <div className='absolute animate-in slide-in-from-top lg:top-[92px] lg:right-[168px] xl:top-[92px] xl:right-[168px] 2xl:top-[92px] 2xl:right-[168px]'>
-        <div className='relative float-right h-[372px] w-[456px] bg-[#003332]'>
-          <div className='absolute top-0 -right-8 border border-[#03BDB8]'>
+      <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-in slide-in-from-top sm:top-1/2 sm:left-1/2 sm:-translate-y-1/2 sm:-translate-x-1/2 md:top-[92px] md:right-[168px] md:translate-y-0 md:translate-x-0 lg:top-[92px] lg:right-[168px] lg:translate-y-0 lg:translate-y-0 lg:translate-x-0 lg:translate-x-0 xl:top-[92px] xl:right-[168px] xl:translate-y-0 xl:translate-x-0 2xl:top-[92px] 2xl:right-[168px] 2xl:translate-y-0 2xl:translate-x-0'>
+        <div className='relative float-right h-[270px] w-[326px] bg-[#003332] sm:h-[270] sm:w-[326] md:h-[372px] md:w-[456px] lg:h-[372px] lg:w-[456px] xl:h-[372px] xl:w-[456px] 2xl:h-[372px] 2xl:w-[456px]'>
+          <div className='invisible absolute -top-4 -right-9 sm:invisible md:visible lg:visible xl:visible 2xl:visible'>
             <Image
               alt='left_arrow'
               width='17'
               height='17'
               src='/svg/left_arrow.svg'
+              className=''
             />
           </div>
+          <img
+            alt='top_left_backup'
+            width='120'
+            height='120'
+            src='/images/top_left_backup.png'
+            className='absolute -top-14 -left-14'
+          />
+          <img
+            alt='bot_right_backup'
+            width='120'
+            height='120'
+            src='/images/bot_right_backup.png'
+            className='absolute top-1/3 -right-14 sm:top-1/3 md:top-1/2 lg:top-1/2 xl:top-1/2 2xl:top-1/2'
+          />
+          <img
+            alt='top_right_backup'
+            width='120'
+            height='120'
+            src='/images/top_right_backup.png'
+            className='absolute -top-14 -right-14'
+          />
+          <img
+            alt='bot_left_backup'
+            width='120'
+            height='120'
+            src='/images/bot_left_backup.png'
+            className='absolute top-1/3 -left-14 sm:top-1/2 md:top-1/2 lg:top-1/2 xl:top-1/2 2xl:top-1/2'
+          />
+          <div></div>
           <div className='absolute -bottom-9 left-0'>
             <a
               className='font-inconsolata text-[#03BDB8]'
@@ -25,11 +56,12 @@ export default function Backup() {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <Image
+              <img
                 alt='twitter'
                 width='120'
                 height='19'
                 src='/svg/twitter.svg'
+                className='h-[19px] w-[80px] sm:h-[19px] sm:w-[80px] md:h-[19px] md:w-[120px] lg:h-[19px] lg:w-[120px] xl:h-[19px] xl:w-[120px] 2xl:h-[19px] 2xl:w-[120px]'
               />
             </a>
           </div>
@@ -40,11 +72,12 @@ export default function Backup() {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <Image
+              <img
                 alt='discord'
                 width='120'
                 height='19'
                 src='/svg/discord.svg'
+                className='h-[19px] w-[80px] sm:h-[19px] sm:w-[80px] md:h-[19px] md:w-[120px] lg:h-[19px] lg:w-[120px] xl:h-[19px] xl:w-[120px] 2xl:h-[19px] 2xl:w-[120px]'
               />
             </a>
           </div>
@@ -55,41 +88,44 @@ export default function Backup() {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <Image
+              <img
                 alt='opensea'
-                width='120'
-                height='19'
                 src='/svg/opensea.svg'
+                className='h-[19px] w-[80px] sm:h-[19px] sm:w-[80px] md:h-[19px] md:w-[120px] lg:h-[19px] lg:w-[120px] xl:h-[19px] xl:w-[120px] 2xl:h-[19px] 2xl:w-[120px]'
               />
             </a>
           </div>
           <div className='mx-auto'>
             <div className='pt-6 pl-6'>
-              <div className='font-inconsolata text-xs text-aka'>
-                [BREACH_PROTOCOL] ATTEMPT 77 of 77 FAILED
-              </div>
-              <div className='font-inconsolata text-xs text-aka'>
-                [BREACH_PROTOCOL] STARTING EMERGENCY BACKUP
-              </div>
-              <div className='font-inconsolata text-xs text-aka'>
-                [BREACH_PROTOCOL] ENCLAVE ACCESS TERMINATED
-              </div>
-              <div className='font-inconsolata text-xs text-aka'>
-                [BREACH_PROTOCOL] SETUP COMPLETE
+              <div className='invisible sm:invisible md:visible lg:visible xl:visible 2xl:visible'>
+                <div className='font-inconsolata text-xs text-aka'>
+                  [BREACH_PROTOCOL] ATTEMPT 77 of 77 FAILED
+                </div>
+                <div className='font-inconsolata text-xs text-aka'>
+                  [BREACH_PROTOCOL] STARTING EMERGENCY BACKUP
+                </div>
+                <div className='font-inconsolata text-xs text-aka'>
+                  [BREACH_PROTOCOL] ENCLAVE ACCESS TERMINATED
+                </div>
+                <div className='font-inconsolata text-xs text-aka'>
+                  [BREACH_PROTOCOL] SETUP COMPLETE
+                </div>
               </div>
               <div
-                className={`pt-4 font-orbitron text-[25px] text-ao ${styles.text_glitch}`}
+                className={`pt-0 font-orbitron text-[25px] text-ao sm:pt-0 md:pt-4 lg:pt-4 xl:pt-4 2xl:pt-4 ${styles.text_glitch}`}
               >
                 EMERGENCY BACKUP ACTIVATED
               </div>
               <div className='font-inconsolata text-ao'>
                 Our collection and communication systems are secured and online
               </div>
-              <div className='font-inconsolata text-xs text-ao'>
-                [BREACH_PROTOCOL] ACTIVATE FRAME PROTOCOL
-              </div>
-              <div className='font-inconsolata text-xs text-ao'>
-                [BREACH_PROTOCOL] REBOOT INITIATED
+              <div className='invisible sm:invisible md:visible lg:visible xl:visible 2xl:visible'>
+                <div className='font-inconsolata text-xs text-ao'>
+                  [BREACH_PROTOCOL] ACTIVATE FRAME PROTOCOL
+                </div>
+                <div className='font-inconsolata text-xs text-ao'>
+                  [BREACH_PROTOCOL] REBOOT INITIATED
+                </div>
               </div>
             </div>
             <a
@@ -103,7 +139,7 @@ export default function Backup() {
                 viewBox='0 0 259 64'
                 fill='none'
                 xmlns='http://www.w3.org/2000/svg'
-                className='absolute bottom-4 -right-9'
+                className={`absolute bottom-4 -right-9 ${styles.blob_green}`}
               >
                 <path d='M16 0L0 15.7538V64H16V0Z' fill='#03BDB8' />
                 <rect
