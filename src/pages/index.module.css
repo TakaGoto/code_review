@@ -39,16 +39,3 @@
     filter: hue-rotate(360deg);
   }
 }
-
-.screen {
-  width: '100vw';
-  height: '2px';
-  background: '#ffffff';
-  ease: Power2.easeOut;
-}
-
-.other-screen {
-  width: '0';
-  height: '0';
-  background: '#ffffff';
-}
