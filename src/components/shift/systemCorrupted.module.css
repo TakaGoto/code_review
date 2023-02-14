@@ -23,7 +23,8 @@
 .line_7,
 .line_8,
 .line_9,
-.line_10 {
+.line_10,
+.line_11 {
   white-space: nowrap; /* keep text in one line */
   overflow: hidden; /* hide text behind the cursor */
 }
@@ -82,8 +83,14 @@
 
 .line_10 {
   animation: animated-text__2 1s steps(30, end) 1s 1 normal both;
-  -webkit-animation-delay: 2.25s;
-  animation-delay: 2.25s;
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+.line_11 {
+  animation: animated-text__2 1s steps(30, end) 1s 1 normal both;
+  -webkit-animation-delay: 2.75s;
+  animation-delay: 2.75s;
 }
 
 @keyframes animated-text__2 {

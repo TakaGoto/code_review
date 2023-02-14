@@ -16,32 +16,32 @@ export default function SystemCorrupted(props: SystemsProps) {
       <div className={`pt-6 font-inconsolata text-aka ${styles.line_2}`}>
         Content access has now been restricted by an unknown operator.
       </div>
-      <div className={`font-inconsolata ${styles.line_2}`}>
+      <div className={`font-inconsolata ${styles.line_3}`}>
         Access codes listed under Shift have been revoked.
       </div>
-      <div className={`${styles.line_3}`}>
+      <div className={`${styles.line_4}`}>
         -----------------------------------------------------------------
       </div>
-      <div className={`font-inconsolata ${styles.line_4}`}>
+      <div className={`font-inconsolata ${styles.line_5}`}>
         [MainFrame] ssh login detected user: 0N1#8879
       </div>
-      <div className={`font-inconsolata ${styles.line_5}`}>
+      <div className={`font-inconsolata ${styles.line_6}`}>
         [MainFrame] executing /bin/sh /breach_protocol.sh
       </div>
-      <div className={`font-inconsolata ${styles.line_6}`}>
+      <div className={`font-inconsolata ${styles.line_7}`}>
         [DATABASE] ENCLAVE_PROD corrupted. attempting repair: FAILED
       </div>
-      <div className={`font-inconsolata ${styles.line_7}`}>
+      <div className={`font-inconsolata ${styles.line_8}`}>
         [DATABASE] ENCLAVE_PROD corrupted. retrieving back: FAILED
       </div>
-      <div className={`font-inconsolata ${styles.line_8}`}>
+      <div className={`font-inconsolata ${styles.line_9}`}>
         [DATABASE] ENCLAVE_PROD corrupted. retrieving shard: FAILED
       </div>
-      <div className={`font-inconsolata ${styles.line_9}`}>
+      <div className={`font-inconsolata ${styles.line_10}`}>
         [ENCLAVE] process corrupted. attempting restart: FAILED
       </div>
       <div
-        className={`font-inconsolata ${styles.line_10}`}
+        className={`font-inconsolata ${styles.line_11}`}
         onAnimationEnd={() => props.setIsTypingDone(true)}
       >
         BREACH PROTOCOL FAILED. RETRYING.......
