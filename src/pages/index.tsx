@@ -1,6 +1,7 @@
 /* eslint-disable unused-imports/no-unused-vars */
 /* eslint-disable @next/next/no-img-element */
 import * as React from 'react';
+import { useEffect } from 'react';
 import { useGlitch } from 'react-powerglitch';
 
 import Header from '@/components/layout/Header';
@@ -21,11 +22,11 @@ export default function HomePage() {
   const [isAnimationDone, setIsAnimationDone] = React.useState(false);
   const glitch = useGlitch();
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setIsAnimationDone(true);
-  //   }, 4000);
-  // }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsAnimationDone(true);
+    }, 4000);
+  }, []);
 
   return (
     <Layout>
@@ -40,7 +41,7 @@ export default function HomePage() {
               style={{
                 backgroundRepeat: 'no-repeat',
               }}
-              // ref={glitch.ref}
+              ref={glitch.ref}
               className='z-1 absolute min-h-screen w-full bg-[#0c0d0d] bg-[url("/images/landing_art.png")] bg-cover bg-center opacity-100 md:w-full lg:block'
             >
               <div className='grid min-h-screen place-items-center'>
