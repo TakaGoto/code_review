@@ -41,10 +41,10 @@ export default function HomePage() {
                 backgroundRepeat: 'no-repeat',
               }}
               // ref={glitch.ref}
-              className='z-1 absolute min-h-screen w-fit bg-[#0c0d0d] bg-[url("/images/landing_art.png")] bg-cover bg-center opacity-100 md:w-full lg:block'
+              className='z-1 absolute min-h-screen w-full bg-[#0c0d0d] bg-[url("/images/landing_art.png")] bg-cover bg-center opacity-100 md:w-full lg:block'
             >
-              <div className='grid min-h-screen w-full place-items-center'>
-                <div className='invisible text-center font-orbitron text-9xl font-bold text-white sm:invisible md:visible lg:visible xl:visible 2xl:visible'>
+              <div className='grid min-h-screen place-items-center'>
+                <div className='text-center font-orbitron text-2xl font-bold text-white md:text-9xl'>
                   0N1Force
                 </div>
               </div>
