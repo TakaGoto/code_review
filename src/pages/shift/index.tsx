@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import Typewriter from 'typewriter-effect';
 
 import styles from './index.module.css';
 
@@ -34,52 +33,43 @@ export default function Shift() {
               <div className='bg-black'>
                 <div className='text-aka'>
                   <div className='pb-3 font-inconsolata text-xs'>
-                    <Typewriter
-                      onInit={(typewriter) => {
-                        typewriter
-                          .changeDelay(10)
-                          .callFunction((state) => {
-                            state.elements.cursor.style.display = 'none';
-                          })
-                          .typeString(
-                            '[MainFrame] ssh login detected user: UNKN0WN'
-                          )
-                          .typeString('<br>')
-                          .typeString('[MainFrame] BEGIN TRACING USER UNKN0WN')
-                          .typeString('<br>')
-                          .typeString(
-                            '[MainFrame] UNKN0WN: ps aux | grep "m33kasa"'
-                          )
-                          .typeString('<br>')
-                          .typeString('[MainFrame] UNKN0WN: kill -9 7777')
-                          .typeString('<br>')
-                          .typeString(
-                            '[MainFrame]<div class="text-kiiro inline">[WARNING]</div>: pid 7777 has exited; attempting restart'
-                          )
-                          .typeString('<br>')
-                          .typeString(
-                            '[MainFrame] UNKN0WN: scp -v shift.sh UNKN0WN@8.8.8.8:Z10N | sudo ./shift.sh'
-                          )
-                          .typeString('<br>')
-                          .typeString('[MainFrame] executing /bin/sh /shift.sh')
-                          .typeString('<br>')
-                          .typeString(
-                            '[MainFrame]<div class="text-kiiro inline">[WARNING]</div> DETECTED malicious activities'
-                          )
-                          .typeString('<br>')
-                          .typeString(
-                            '[MainFrame]<div class="text-kiiro inline">[WARNING]</div> attempting to kill pid 1111: failed'
-                          )
-                          .typeString('<br>')
-                          .typeString(
-                            '[MainFrame][ERR0R] ACTIVATING DEFENSE PROTOCOL'
-                          )
-                          .callFunction(() => {
-                            setSystemsTypingDone(true);
-                          })
-                          .start();
-                      }}
-                    />
+                    <div className={`${styles.line_1}`}>
+                      [MainFrame] ssh login detected user: UNKN0WN
+                    </div>
+                    <div className={`${styles.line_2}`}>
+                      [MainFrame] BEGIN TRACING USER UNKN0WN
+                    </div>
+                    <div className={`${styles.line_3}`}>
+                      [MainFrame] UNKN0WN: ps aux | grep "m33kasa"
+                    </div>
+                    <div className={`${styles.line_4}`}>
+                      [MainFrame]
+                      <div className='inline text-kiiro'> [WARNING]</div>: pid
+                      7777 has exited; attempting restart
+                    </div>
+                    <div className={`${styles.line_5}`}>
+                      [MainFrame] UNKN0WN: scp -v shift.sh UNKN0WN@8.8.8.8:Z10N
+                      | sudo ./shift.sh
+                    </div>
+                    <div className={`${styles.line_6}`}>
+                      [MainFrame] executing /bin/sh /shift.sh
+                    </div>
+                    <div className={`${styles.line_7}`}>
+                      [MainFrame]
+                      <div className='inline text-kiiro'> [WARNING]</div>{' '}
+                      DETECTED malicious activities
+                    </div>
+                    <div className={`${styles.line_8}`}>
+                      [MainFrame]
+                      <div className='inline text-kiiro'> [WARNING]</div>{' '}
+                      attempting to kill pid 1111: failed
+                    </div>
+                    <div
+                      className={`${styles.line_9}`}
+                      onAnimationEnd={() => setSystemsTypingDone(true)}
+                    >
+                      [MainFrame][ERR0R] ACTIVATING DEFENSE PROTOCOL
+                    </div>
                   </div>
                 </div>
               </div>

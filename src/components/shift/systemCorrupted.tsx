@@ -1,4 +1,4 @@
-import Typewriter from 'typewriter-effect';
+import styles from './systemCorrupted.module.css';
 
 interface SystemsProps {
   // eslint-disable-next-line @typescript-eslint/ban-types
@@ -8,7 +8,45 @@ interface SystemsProps {
 export default function SystemCorrupted(props: SystemsProps) {
   return (
     <div className='text-aka'>
-      <Typewriter
+      <div className={`${styles.line_1}`}>
+        <div className='pt-8 font-orbitron text-[32px] font-semibold'>
+          SYST3M CORRUPTED
+        </div>
+      </div>
+      <div className={`pt-6 font-inconsolata text-aka ${styles.line_2}`}>
+        Content access has now been restricted by an unknown operator.
+      </div>
+      <div className={`font-inconsolata ${styles.line_2}`}>
+        Access codes listed under Shift have been revoked.
+      </div>
+      <div className={`${styles.line_3}`}>
+        -----------------------------------------------------------------
+      </div>
+      <div className={`font-inconsolata ${styles.line_4}`}>
+        [MainFrame] ssh login detected user: 0N1#8879
+      </div>
+      <div className={`font-inconsolata ${styles.line_5}`}>
+        [MainFrame] executing /bin/sh /breach_protocol.sh
+      </div>
+      <div className={`font-inconsolata ${styles.line_6}`}>
+        [DATABASE] ENCLAVE_PROD corrupted. attempting repair: FAILED
+      </div>
+      <div className={`font-inconsolata ${styles.line_7}`}>
+        [DATABASE] ENCLAVE_PROD corrupted. retrieving back: FAILED
+      </div>
+      <div className={`font-inconsolata ${styles.line_8}`}>
+        [DATABASE] ENCLAVE_PROD corrupted. retrieving shard: FAILED
+      </div>
+      <div className={`font-inconsolata ${styles.line_9}`}>
+        [ENCLAVE] process corrupted. attempting restart: FAILED
+      </div>
+      <div
+        className={`font-inconsolata ${styles.line_10}`}
+        onAnimationEnd={() => props.setIsTypingDone(true)}
+      >
+        BREACH PROTOCOL FAILED. RETRYING.......
+      </div>
+      {/* <Typewriter
         options={{ skipAddStyles: true }}
         onInit={(typewriter) => {
           typewriter
@@ -55,7 +93,7 @@ export default function SystemCorrupted(props: SystemsProps) {
             })
             .start();
         }}
-      />
+      /> */}
     </div>
   );
 }
