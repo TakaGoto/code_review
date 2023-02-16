@@ -99,16 +99,16 @@ export default function Backup() {
             <div className='pt-6 pl-6'>
               <div className='invisible sm:invisible md:visible lg:visible xl:visible 2xl:visible'>
                 <div className='font-inconsolata text-xs text-aka'>
-                  [BREACH_PROTOCOL] ATTEMPT 77 of 77 FAILED
+                  [REBOOT_PROTOCOL] ATTEMPT 77 of 77 FAILED
                 </div>
                 <div className='font-inconsolata text-xs text-aka'>
-                  [BREACH_PROTOCOL] STARTING EMERGENCY BACKUP
+                  [REBOOT_PROTOCOL] STARTING EMERGENCY BACKUP
                 </div>
                 <div className='font-inconsolata text-xs text-aka'>
-                  [BREACH_PROTOCOL] ENCLAVE ACCESS TERMINATED
+                  [REBOOT_PROTOCOL] ENCLAVE ACCESS TERMINATED
                 </div>
                 <div className='font-inconsolata text-xs text-aka'>
-                  [BREACH_PROTOCOL] SETUP COMPLETE
+                  [REBOOT_PROTOCOL] SETUP COMPLETE
                 </div>
               </div>
               <div
@@ -121,10 +121,10 @@ export default function Backup() {
               </div>
               <div className='invisible sm:invisible md:visible lg:visible xl:visible 2xl:visible'>
                 <div className='font-inconsolata text-xs text-ao'>
-                  [BREACH_PROTOCOL] ACTIVATE FRAME PROTOCOL
+                  [REBOOT_PROTOCOL] ACTIVATE FRAME PROTOCOL
                 </div>
                 <div className='font-inconsolata text-xs text-ao'>
-                  [BREACH_PROTOCOL] REBOOT INITIATING.......
+                  [REBOOT_PROTOCOL] REBOOT INITIATING.......
                 </div>
               </div>
             </div>
