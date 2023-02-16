@@ -139,7 +139,7 @@ export default function Backup() {
                 viewBox='0 0 259 64'
                 fill='none'
                 xmlns='http://www.w3.org/2000/svg'
-                className={`absolute bottom-4 -right-9 ${styles.blob_green}`}
+                className='absolute bottom-4 -right-9 animate-pulse'
               >
                 <path d='M16 0L0 15.7538V64H16V0Z' fill='#03BDB8' />
                 <rect
