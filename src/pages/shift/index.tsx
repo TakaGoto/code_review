@@ -81,6 +81,13 @@ export default function Shift() {
                 <div></div>
               )}
             </div>
+            {isTypingDone && (
+              <div
+                className={`w-full pt-12 text-center font-orbitron text-sm text-aka md:pt-48 md:text-2xl ${styles.text_glitch}`}
+              >
+                DESTRUCTION OFTEN PRECEDES REBIRTH
+              </div>
+            )}
           </div>
         </div>
       </div>

@@ -20,7 +20,7 @@ export default function SystemCorrupted(props: SystemsProps) {
         -----------------------------------------------------------------
       </div>
       <div className={`${styles.line_6}`}>
-        [MainFrame] M0R1A: executing /bin/sh /sh1n_w0rld.sh
+        [MainFrame] M0R1A: executing /bin/sh /m0ria.sh
       </div>
       <div className={`${styles.line_7}`}>
         [DATABASE] ENCLAVE_PROD corrupted. attempting repair: FAILED
