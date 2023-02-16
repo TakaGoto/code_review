@@ -1,13 +1,9 @@
-import styles from './logo.module.css';
-
 export default function Shift() {
   return (
-    <div
-      style={{
-        backgroundImage: `url(/svg/0n1_logo.svg)`,
-        backgroundRepeat: 'no-repeat',
-      }}
-      className={`${styles.glitch} min-h-screen w-full bg-[#0c0d0d] bg-cover bg-center opacity-100`}
-    ></div>
+    <div className='bg-black bg-cover bg-center pt-32 pl-32 opacity-100'>
+      {/* <img ref={glitch.ref} src='/svg/0n1_logo.svg' height='500' width='500' /> */}
+    </div>
+    // <div className='bg-black bg-cover bg-center pt-10 opacity-100'>
+    // </div>
   );
 }

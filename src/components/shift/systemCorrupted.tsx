@@ -16,17 +16,11 @@ export default function SystemCorrupted(props: SystemsProps) {
       <div className={`pt-6 ${styles.line_2}`}>
         Content access has now been restricted by an unknown operator.
       </div>
-      <div className={`${styles.line_3}`}>
-        Access codes listed under Shift have been revoked.
-      </div>
       <div className={`${styles.line_4}`}>
         -----------------------------------------------------------------
       </div>
-      <div className={`${styles.line_5}`}>
-        [MainFrame] ssh login detected user: 0N1#8879
-      </div>
       <div className={`${styles.line_6}`}>
-        [MainFrame] executing /bin/sh /breach_protocol.sh
+        [MainFrame] M0R1A: executing /bin/sh /sh1n_w0rld.sh
       </div>
       <div className={`${styles.line_7}`}>
         [DATABASE] ENCLAVE_PROD corrupted. attempting repair: FAILED
@@ -44,7 +38,7 @@ export default function SystemCorrupted(props: SystemsProps) {
         className={`${styles.line_11}`}
         onAnimationEnd={() => props.setIsTypingDone(true)}
       >
-        BREACH PROTOCOL FAILED. RETRYING.......
+        REBOOT PROTOCOL FAILED. RETRYING.......
       </div>
     </div>
   );

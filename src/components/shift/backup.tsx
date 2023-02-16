@@ -7,7 +7,7 @@ import Seo from '@/components/Seo';
 
 export default function Backup() {
   return (
-    <div className='fixed inset-0 h-full w-full overflow-y-auto bg-black bg-opacity-50 sm:bg-opacity-50 md:bg-opacity-50 lg:bg-opacity-0 xl:bg-opacity-0 2xl:bg-opacity-0'>
+    <div className='fixed inset-0 h-full w-full overflow-y-auto bg-black bg-opacity-50 sm:bg-opacity-50 md:bg-opacity-50 lg:bg-opacity-0'>
       <Seo />
       <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-in slide-in-from-top sm:top-1/2 sm:left-1/2 sm:-translate-y-1/2 sm:-translate-x-1/2 md:top-[92px] md:right-[168px] md:translate-y-0 md:translate-x-0 lg:top-[92px] lg:right-[168px] lg:translate-y-0 lg:translate-y-0 lg:translate-x-0 lg:translate-x-0 xl:top-[92px] xl:right-[168px] xl:translate-y-0 xl:translate-x-0 2xl:top-[92px] 2xl:right-[168px] 2xl:translate-y-0 2xl:translate-x-0'>
         <div className='relative float-right h-[270px] w-[326px] bg-[#003332] sm:h-[270] sm:w-[326] md:h-[372px] md:w-[456px] lg:h-[372px] lg:w-[456px] xl:h-[372px] xl:w-[456px] 2xl:h-[372px] 2xl:w-[456px]'>
@@ -124,7 +124,7 @@ export default function Backup() {
                   [BREACH_PROTOCOL] ACTIVATE FRAME PROTOCOL
                 </div>
                 <div className='font-inconsolata text-xs text-ao'>
-                  [BREACH_PROTOCOL] REBOOT INITIATED
+                  [BREACH_PROTOCOL] REBOOT INITIATING.......
                 </div>
               </div>
             </div>

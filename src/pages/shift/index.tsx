@@ -34,41 +34,41 @@ export default function Shift() {
                 <div className='text-aka'>
                   <div className='pb-3 font-inconsolata text-xs'>
                     <div className={`${styles.line_1}`}>
-                      [MainFrame] ssh login detected user: UNKN0WN
+                      [MainFrame] ssh login detected user: M0R1A
                     </div>
                     <div className={`${styles.line_2}`}>
-                      [MainFrame] BEGIN TRACING USER UNKN0WN
+                      [MainFrame] BEGIN TRACING USER M0R1A
                     </div>
                     <div className={`${styles.line_3}`}>
-                      [MainFrame] UNKN0WN: ps aux | grep "m33kasa"
+                      [MainFrame] M0R1A: ps aux | grep "m33kasa\|protocol"
                     </div>
                     <div className={`${styles.line_4}`}>
+                      [MainFrame] M0R1A: kill -9 7777
+                    </div>
+                    <div className={`${styles.line_5}`}>
                       [MainFrame]
                       <div className='inline text-kiiro'> [WARNING]</div>: pid
                       7777 has exited; attempting restart
                     </div>
-                    <div className={`${styles.line_5}`}>
-                      [MainFrame] UNKN0WN: scp -v shift.sh UNKN0WN@8.8.8.8:Z10N
-                      | sudo ./shift.sh
-                    </div>
                     <div className={`${styles.line_6}`}>
-                      [MainFrame] executing /bin/sh /shift.sh
+                      [MainFrame] M0R1A: scp -v shift.sh M0R1A@8.8.8.8 | sudo
+                      ./shift.sh
                     </div>
                     <div className={`${styles.line_7}`}>
-                      [MainFrame]
-                      <div className='inline text-kiiro'> [WARNING]</div>{' '}
-                      DETECTED malicious activities
+                      [MainFrame] executing /bin/sh /shift.sh
                     </div>
                     <div className={`${styles.line_8}`}>
                       [MainFrame]
-                      <div className='inline text-kiiro'> [WARNING]</div>{' '}
-                      attempting to kill pid 1111: failed
+                      <div className='inline text-kiiro'> [WARNING] </div>
+                      DETECTED malicious activities
                     </div>
                     <div
                       className={`${styles.line_9}`}
                       onAnimationEnd={() => setSystemsTypingDone(true)}
                     >
-                      [MainFrame][ERR0R] ACTIVATING DEFENSE PROTOCOL
+                      [MainFrame]
+                      <div className='inline text-kiiro'> [WARNING] </div>
+                      attempting to kill pid 1111: failed
                     </div>
                   </div>
                 </div>
@@ -80,7 +80,6 @@ export default function Shift() {
               ) : (
                 <div></div>
               )}
-              {/* <DefenseProtocol /> */}
             </div>
           </div>
         </div>
