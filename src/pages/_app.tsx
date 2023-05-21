@@ -1,7 +1,18 @@
 import { AppProps } from 'next/app';
 import { useEffect } from 'react';
+import { createPublicClient, http } from 'viem';
+import { createConfig, mainnet, WagmiConfig } from 'wagmi';
 
 import '@/styles/globals.css';
+
+const config = createConfig({
+  autoConnect: true,
+  publicClient: createPublicClient({
+    chain: mainnet,
+    transport: http(),
+  }),
+});
+
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -23,7 +34,11 @@ function MyApp({ Component, pageProps }: AppProps) {
     }
   });
 
-  return <Component {...pageProps} />;
+  return (
+    <WagmiConfig config={config}>
+      <Component {...pageProps} />
+    </WagmiConfig>
+  );
 }
 
 export default MyApp;
