@@ -9,6 +9,7 @@ type frameNft = {
   tokenId: string;
   contractAddress: string;
   imageUrl: string;
+  collectionType: string;
 };
 
 interface ProfileProps {
@@ -18,11 +19,12 @@ interface ProfileProps {
 const getImageUrl = (
   tokenId: string,
   height: string,
-  width: string
+  width: string,
+  collectionType: string
 ): string => {
   const appendedTokenId = tokenId.padStart(4, '0');
   const imageId = 'We2UD5NhUL4OYZ7uWnOoEQ';
-  return `https://imagedelivery.net/${imageId}/frames/${appendedTokenId}.png/w=${width},h=${height}`;
+  return `https://imagedelivery.net/${imageId}/${collectionType}/${appendedTokenId}.png/w=${width},h=${height}`;
 };
 
 const Profile: NextPage<ProfileProps> = (props) => {
@@ -56,13 +58,18 @@ const Profile: NextPage<ProfileProps> = (props) => {
           page
         </div>
       )}
-      <div> this address has the following frames </div>
+      <div> this address has the following frames and genesis </div>
       <div className='grid grid-cols-4 gap-4'>
         {props.frameNfts.map((frameNft: frameNft) => {
           return (
             <Image
               key={frameNft.tokenId}
-              src={getImageUrl(frameNft.tokenId, '400', '400')}
+              src={getImageUrl(
+                frameNft.tokenId,
+                '400',
+                '400',
+                frameNft.collectionType
+              )}
               width='400'
               height='400'
               alt={'picture of frame' + frameNft.tokenId}
