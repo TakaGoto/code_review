@@ -80,10 +80,10 @@ export const getServerSideProps: GetServerSideProps<{
   const address = context.query.profileAddress;
   const url =
     process.env.NODE_ENV === 'development'
-      ? 'http://localhost:3000'
-      : 'some_prod_url';
+      ? 'http://localhost:3000/'
+      : 'https://0n1force-web-v2.vercel.app/';
   const response = await fetch(
-    url + `/api/profile/getFrameNftsByAddress?address=${address}`
+    url + `api/profile/getFrameNftsByAddress?address=${address}`
   );
   const frameNfts = await response.json();
   return {
